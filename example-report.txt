@@ -1,0 +1,10 @@
+/home/jarle/ses-events-2/2025/10-24
+
+Delivery: 15
+Send: 15
+
+ses-smtp-user.20230721-025501.he03: 4
+ses-smtp-user.20230801-143659.docker.he01.uptime-kuma: 7
+ses-smtp-user.20230816-171145.he04: 1
+ses-smtp-user.20241203-182349.pi5: 2
+ses-smtp-user.20251017-171907.he06: 1

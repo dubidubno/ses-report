@@ -1,0 +1,5 @@
+# Crontab entry for ses-report
+# Runs daily at 02:00 hours
+# Emails report and stores data to JSON Lines
+
+0 2 * * * cd /home/jarle/prod/ses-report && /home/jarle/prod/ses-report/venv/bin/python /home/jarle/prod/ses-report/ses-report.py --quiet --email --store-data
