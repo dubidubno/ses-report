@@ -134,6 +134,9 @@ def main():
         logging.getLogger().setLevel(logging.INFO)
     mydate = datetime.date.today() - datetime.timedelta(days=settings.report.days_back)
     mypath = pathlib.Path(f'{settings.paths.sns_messages_dir}/{mydate.year}/{mydate.month:02}-{mydate.day:02}')
+    if not mypath.exists():
+        logging.error(f'Data directory not found: {mypath}')
+        return
     (message_type_count, sent_from_count) = get_data(mypath)
     report = f'{mypath}\n\n{make_report(message_type_count, sent_from_count)}'
  
