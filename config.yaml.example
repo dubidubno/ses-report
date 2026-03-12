@@ -1,0 +1,11 @@
+email:
+  from: sender@example.com
+  to: recipient@example.com
+  subject: SES events report
+  smtp_server: localhost
+
+paths:
+  sns_messages_dir: /path/to/ses-events
+
+report:
+  days_back: 1
